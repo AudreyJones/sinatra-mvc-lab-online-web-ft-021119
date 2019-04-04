@@ -3,6 +3,20 @@ class PigLatinizer
   def initialize
   end
 
+  def piglatinize(sentence)
+
+    array = sentence.split(" ")
+binding.pry
+    if array.length > 1
+
+      array.map {|i| i.word_piglatinize}
+      array = array.join(" ")
+    else
+      back_to_word = array.join("")
+      back_to_word.word_piglatinize
+    end
+  end
+
   def word_piglatinize (str)
     str1="aeiou"
     str2=(/\A[aeiou]/) # is the first letter a vowel?
@@ -29,18 +43,6 @@ class PigLatinizer
     end
   end
 
-  def piglatinize(sentence)
-
-    array = sentence.split(" ")
-binding.pry
-    if array.length > 1
-
-      array.map {|i| i.word_piglatinize}
-      array = array.join(" ")
-    else
-      back_to_word = array.join("")
-      back_to_word.word_piglatinize
-    end
-  end
+  
 
 end
