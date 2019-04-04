@@ -34,7 +34,7 @@ class PigLatinizer
     array = sentence.split(" ")
     if array.length > 1
       array.map {|i| i.word_piglatinize}
-      array.join(" ")
+      array = array.join(" ")
     else
       sentence.word_piglatinize
     end
