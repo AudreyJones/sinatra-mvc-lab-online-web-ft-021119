@@ -30,6 +30,7 @@ class PigLatinizer
   end
 
   def piglatinize(sentence)
+    binding.pry
     #do something to split sentence into array
     array = sentence.split(" ")
     if array.length > 1
