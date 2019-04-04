@@ -30,9 +30,11 @@ class PigLatinizer
   end
 
   def piglatinize(sentence)
-    # binding.pry
+    
     array = sentence.split(" ")
+    
     if array.length > 1
+      binding.pry
       array.map {|i| i.word_piglatinize}
       array = array.join(" ")
     else
