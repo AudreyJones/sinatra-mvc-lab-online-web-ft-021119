@@ -37,6 +37,7 @@ class PigLatinizer
       array.map { |e|  }
     else
       sentence.word_piglatinize
+    end
   end
 
 end
