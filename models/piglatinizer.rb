@@ -33,7 +33,7 @@ class PigLatinizer
     binding.pry
     array = sentence.split(" ")
     if array.length > 1
-      array.map { |e|  }
+      array.map { |i| i.word_piglatinize  }
     else
       sentence.word_piglatinize
     end
