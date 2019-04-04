@@ -15,7 +15,7 @@ binding.pry
     end
   end
 
-  def word_piglatinize (str)
+  def word_piglatinize(str)
     str1="aeiou"
     str2=(/\A[aeiou]/) # is the first letter a vowel?
     vowel = str1.scan(/\w/)
