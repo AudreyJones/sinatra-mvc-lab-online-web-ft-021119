@@ -38,8 +38,8 @@ binding.pry
       array.map {|i| i.word_piglatinize}
       array = array.join(" ")
     else
-      back_to_s = array.join("")
-      array.word_piglatinize
+      back_to_word = array.join("")
+      back_to_word.word_piglatinize
     end
   end
 
