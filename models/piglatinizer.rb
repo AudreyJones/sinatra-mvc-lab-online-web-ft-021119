@@ -4,11 +4,9 @@ class PigLatinizer
   end
 
   def piglatinize(sentence)
-
     array = sentence.split(" ")
 binding.pry
     if array.length > 1
-
       array.map {|i| i.word_piglatinize}
       array = array.join(" ")
     else
