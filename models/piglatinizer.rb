@@ -33,8 +33,8 @@ class PigLatinizer
     #do something to split sentence into array
     array = sentence.split(" ")
     if array.length > 1
-    #loop
-    # else
+      array.map { |e|  }
+    else
     #do word_piglatinize
 
   end
