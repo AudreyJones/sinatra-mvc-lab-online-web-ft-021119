@@ -38,7 +38,7 @@ binding.pry
       array.map {|i| i.word_piglatinize}
       array = array.join(" ")
     else
-      sentence.word_piglatinize
+      array.word_piglatinize
     end
   end
 
