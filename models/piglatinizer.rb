@@ -31,6 +31,7 @@ class PigLatinizer
 
   def piglatinize(sentence)
     #do something to split sentence into array
+    sentence.split(" ")
     # if array > 1
     #loop
     # else
