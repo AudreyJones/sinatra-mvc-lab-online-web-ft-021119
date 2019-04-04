@@ -35,8 +35,7 @@ class PigLatinizer
     if array.length > 1
       array.map { |e|  }
     else
-    #do word_piglatinize
-
+      sentence.word_piglatinize
   end
 
 end
